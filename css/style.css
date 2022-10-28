@@ -1,0 +1,2210 @@
+@font-face {
+  font-family: "freightbigcmp-pro";
+  src: url("https://use.typekit.net/af/7692da/000000000000000077359faf/30/l?primer=e6066692ab328d1a92bb155659ed6609b693e1e352f0e8982e4224719b13bdfb&fvd=n3&v=3");
+  format: "woff2";
+}
+
+@font-face {
+  font-family: "Univers LT W05_55 Roman";
+  src: url("https://ccc-frontend.github.io/fonts/fonts/7b452431-e4a6-48a8-8ba1-c6300f9384df.woff2");
+  format: "woff2";
+}
+
+@font-face {
+  font-family: 'UniversLTPro-65Bold';
+  src: url("https://ccc-frontend.github.io/fonts/fonts/Linotype-UniversLTPro-65Bold.woff2");
+  format: "woff2";
+}
+
+body {
+  margin: 0;
+}
+
+
+
+.main {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FCF7F2;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: trnsparent;
+}
+
+.main * {
+  padding: 0;
+  margin: 0;
+  font-family: "Univers LT W05_55 Roman";
+}
+.cards__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto
+}
+
+.cards__circle {
+  display: none;
+}
+
+.terms {
+  padding: 50px 15px
+}
+
+.carousel {
+  padding: 120px 147px 120px 147px;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #B7B4B4;;
+}
+
+.carousel__title {
+  font-family: "freightbigcmp-pro";
+  text-align: center;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 90%;
+}
+
+.carousel__title--font {
+  font-family: "Univers LT W05_55 Roman";
+  font-size: 50px;
+  letter-spacing: -2px;
+}
+.carousel__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 80px auto 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  overflow-x: scroll;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+  margin-bottom: 80px;
+
+  
+}
+
+
+.carousel__container::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel__container-link {
+  width: 222px;
+  min-width: 222px;
+  padding-left: 20px
+
+  
+}
+
+.carousel__container-link:first-child {
+  padding-left: 0;
+}
+
+.carousel__container-item {
+  display: block;
+  width: 100%;
+  
+}
+.carousel__link-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.header {
+  position: relative;
+  aspect-ratio: 1920/900;
+  background-color: #FF8AA3;
+}
+
+.header__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  width: 100%;
+  z-index: 0;
+}
+
+.header__motto {
+  position: absolute;
+  top: 40%;
+  left: 147px;
+  right: 60px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #FFFFFF;
+  z-index: 2;
+}
+
+.header__motto-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.header__title {
+  font-family: "freightbigcmp-pro";
+  font-size: 120px;
+  font-weight: 400;
+  line-height: 90%;
+}
+.header__title--font {
+  font-size: 110px;
+  letter-spacing: -3px;
+}
+
+.header__card {
+  position: absolute;
+  top: 45%;
+  right: 0%;
+  transform: translateY(-50%);
+  width: 35%;
+}
+
+.header__paragraph {
+  font-family: "freightbigcmp-pro";
+  font-size: 96px;
+  max-width: 560px;
+  line-height: 87px;
+  margin-bottom: 62px;
+}
+
+.header__arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 20px;
+  display: none;
+  -webkit-animation: opacity-pulse;
+  animation: opacity-pulse;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  z-index: 10;
+}
+
+.header__popup {
+  position: fixed;
+  width: 150px;
+  height: 100px;
+  background-color: #FCF7F2;
+  color: black;
+  right: 4%;
+  bottom: 10%;
+  border-radius: 10px;
+  padding: 24px;
+  -webkit-box-shadow: 0px 2px 6px 3px rgba(227, 217, 207, 0.3);
+  box-shadow: 0px 2px 6px 3px rgba(227, 217, 207, 0.3);
+  z-index: 10;
+}
+
+.header__text {
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.header__popup-link {
+  display: block;
+  border: 1px solid #222222;
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  margin: 0 auto;
+  margin-top: 15px;
+  font-size: 13px;
+  text-decoration: none;
+  color: #222222;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header__popup-link:hover {
+  background-color: #222222;
+  color: white;
+}
+
+.header__link {
+  display: block;
+  width: 280px;
+  height: 48px;
+  color: #FFFFFF;
+  font-size: 13px;
+  text-align: center;
+  line-height: 47px;
+  text-decoration: none;
+  background-color: #222222;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header__link:hover {
+  background-color: black;
+}
+
+
+.header__buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.header__buttons-img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.header__placeholder {
+  position: relative;
+}
+
+.header__placeholder-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1920/1080;
+}
+
+.header__placeholder-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50px;
+}
+
+@-webkit-keyframes opacity-pulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity-pulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.saldo {
+  display: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.slider-cards {
+  display: none;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-shrink: 0;
+  padding: 100px 0;
+  max-width: 100%;
+  overflow-x: scroll;
+  align-self: flex-start;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+scroll-behavior: smooth;  }
+
+  .slider-cards::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+.slider-cards__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 883px;
+  height: 574px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  background-color: #EAEAEA;
+}
+.slider-cards__item:last-child {
+  margin-right: 0px
+}
+.slider-cards__img {
+  display: block;
+  width: 55%;
+  border-radius: 4%;
+}
+
+@media (max-width: 1024px) {
+  .slider-cards__item {
+    width: 663px;
+    height: 442px;
+  }
+}
+
+@media (max-width: 900px) {
+  .slider-cards__item {
+    width: 509px;
+    height: 339px;
+  }
+  .slider-cards__img {
+    width: 75%;
+  }
+  
+}
+
+@media (max-width: 650px) {
+  
+  .slider-cards__item {
+    width: 304px;
+    height: 203px;
+  }
+  .slider-cards {
+    padding: 0 0 50px 15px
+  }
+}
+#electronic .slider-cards {
+  display: flex;
+}
+
+.nav {
+  position: relative;
+  padding: 0 147px;
+  background-color: #FCF7F2;
+  border-bottom: 1px solid #B7B4B4;
+  z-index: 2;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 100%;
+  list-style: none;
+  height: 104px;
+}
+
+.nav__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 350px;
+  height: 100%;
+}
+
+
+
+.nav__bottom-line {
+  position: absolute;
+  height: 3px;
+  background-color: #070000;
+  width: 80%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: -2px;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.nav__img {
+  width: 26px;
+  color: #4E4E4E;
+  margin-right: 10px;
+}
+
+.nav__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  width: 75%;
+}
+
+.nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #4E4E4E;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* #physical,
+#electronic {
+  max-width: 1300px;
+  margin: auto;
+} */
+
+#howto {
+  width: 100%;
+  background-color: #FCF7F2;
+}
+
+
+#electronic,
+#howto {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-animation: show-section 1s;
+  animation: show-section 1s;
+  z-index: 1;
+}
+
+#physical {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: none;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-animation: show-section 1s;
+  animation: show-section 1s;
+  z-index: 1;
+}
+
+#physical .cards,
+#electronic .cards,
+#howto .cards {
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 120px 147px 120px 147px;
+  background-color: #FCF7F2;
+  border-bottom: 1px solid #B7B4B4;
+}
+
+#physical .cards__inner,
+#electronic .cards__inner,
+#howto .cards__inner {
+  width: 50%;
+  height: 100%;
+}
+
+#physical .cards__discount,
+#electronic .cards__discount,
+#howto .cards__discount {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: "freightbigcmp-pro";
+  font-size: 120px;
+  line-height: 100%;
+  color: #FCF7F2;
+  z-index: 2;
+}
+
+#physical .cards__inner:last-child,
+#electronic .cards__inner:last-child,
+#howto .cards__inner:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#physical .cards__motto,
+#electronic .cards__motto,
+#howto .cards__motto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+#physical .cards__animation,
+#electronic .cards__animation,
+#howto .cards__animation {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: flex-end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50%;
+}
+
+#physical .cards__animation-physical,
+#electronic .cards__animation-physical,
+#howto .cards__animation-physical {
+  display: block;
+  width: 100%;
+  animation-name: circle;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+
+@keyframes circle {
+  0%   {transform: rotate(0deg) scale(1.0);}
+  50%  {transform: rotate(180deg) scale(1.1);}
+  100% {transform: rotate(360deg) scale(1.0);}
+}
+
+#physical .cards__title,
+#electronic .cards__title,
+#howto .cards__title {
+  font-family: 'UniversLTPro-65Bold';
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 27px;
+  color: #222222;
+  max-width: 550px;
+}
+
+
+
+#physical .cards__paragraph,
+#electronic .cards__paragraph,
+#howto .cards__paragraph {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 27px;
+  max-width: 450px;
+}
+
+#physical .cards__paragraph--small,
+#electronic .cards__paragraph--small,
+#howto .cards__paragraph--small {
+  font-size: 15px;
+}
+
+#physical .cards__link,
+#electronic .cards__link,
+#howto .cards__link {
+  display: block;
+  font-size: 13px;
+  text-decoration: none;
+  color: #FFFFFF;
+  height: 48px;
+  width: 280px;
+  text-align: center;
+  line-height: 47px;
+  background-color: #222222;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#physical .cards__link:hover,
+#electronic .cards__link:hover,
+#howto .cards__link:hover {
+  background-color: black;
+}
+
+#physical .instructions,
+#electronic .instructions,
+#howto .instructions {
+  display: none;
+  padding: 58px 50px;
+  background-color: #FCF7F2;
+}
+
+#physical .instructions__title,
+#electronic .instructions__title,
+#howto .instructions__title {
+  text-align: center;
+  font-size: 78px;
+  line-height: 81px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  margin-bottom: 160px;
+  letter-spacing: -3px;
+}
+
+#physical .instructions__inner,
+#electronic .instructions__inner,
+#howto .instructions__inner {
+  font-family: "freightbigcmp-pro";
+  font-size: 96px;
+  letter-spacing: 0px;
+}
+
+#physical .instructions__items,
+#electronic .instructions__items,
+#howto .instructions__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  text-align: center;
+}
+
+#physical .instructions__item,
+#electronic .instructions__item,
+#howto .instructions__item {
+  width: 300px;
+}
+
+#physical .instructions__img,
+#electronic .instructions__img,
+#howto .instructions__img {
+  width: 170px;
+}
+
+#physical .instructions__paragraph,
+#electronic .instructions__paragraph,
+#howto .instructions__paragraph {
+  font-size: 20px;
+  margin-top: 10px;
+  line-height: 28px;
+}
+
+#physical .instructions__link,
+#electronic .instructions__link,
+#howto .instructions__link {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  border: solid 1px #000000;
+  height: 46px;
+  width: 206px;
+  line-height: 46px;
+  font-size: 13px;
+  margin: 35px auto 0 auto;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#physical .instructions__link:hover,
+#electronic .instructions__link:hover,
+#howto .instructions__link:hover {
+  color: white;
+  background-color: black;
+}
+
+#physical .points.padding-smaller,
+#electronic .points.padding-smaller,
+#howto .points.padding-smaller {
+  padding: 180px 29px 50px 29px;
+}
+
+#physical .points,
+#electronic .points,
+#howto .points {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 180px 29px 50px 29px;
+  background-color: #FCF7F2;
+}
+
+#physical .points__inner,
+#electronic .points__inner,
+#howto .points__inner {
+  width: 50%;
+}
+
+
+
+#physical .points__video,
+#electronic .points__video,
+#howto .points__video {
+  width: 100%;
+}
+
+#physical .points__img,
+#electronic .points__img,
+#howto .points__img {
+  width: 100%;
+}
+
+#physical .points__title,
+#electronic .points__title,
+#howto .points__title {
+  font-family: 'UniversLTPro-65Bold';
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+#physical .points__title.howto,
+#electronic .points__title.howto,
+#howto .points__title.howto {
+  margin-bottom: 27px;
+}
+
+#physical .points__title2,
+#electronic .points__title2,
+#howto .points__title2 {
+  margin-bottom: 37px;
+  max-width: 400px;
+}
+
+#physical .points__list,
+#electronic .points__list,
+#howto .points__list {
+  margin-left: 100px;
+  list-style: none;
+}
+
+#physical .points__item,
+#electronic .points__item,
+#howto .points__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+#physical .points__tick,
+#electronic .points__tick,
+#howto .points__tick {
+  width: 35px;
+}
+
+#physical .points__text,
+#electronic .points__text,
+#howto .points__text {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 20px;
+  line-height: 28px;
+}
+
+#physical .points__link,
+#electronic .points__link,
+#howto .points__link {
+  display: block;
+  margin: 70px 0 0 100px;
+  font-size: 13px;
+  background-color: #222222;
+  height: 48px;
+  width: 196px;
+  line-height: 47px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+#electronic .points__link {
+  width: 260px;
+}
+
+#physical .points__link:hover,
+#electronic .points__link:hover,
+#howto .points__link:hover {
+  background-color: black;
+}
+
+#physical .slider,
+#electronic .slider,
+#howto .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 120px 0;
+  overflow-x: scroll;
+  background-color: #FCF7F2;
+}
+
+#physical .reminder,
+#electronic .reminder,
+#howto .reminder {
+  text-align: center;
+  padding: 116px 50px;
+  font-size: 82px;
+  line-height: 85px;
+  letter-spacing: -3px;
+}
+
+#physical .reminder__text.inner,
+#electronic .reminder__text.inner,
+#howto .reminder__text.inner {
+  font-family: "freightbigcmp-pro";
+  font-size: 96px;
+  letter-spacing: 0px;
+}
+
+#physical .faq,
+#electronic .faq,
+#howto .faq {
+  padding: 110px 35px;
+  background-color: #FCF7F2;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+#physical .faq__title,
+#electronic .faq__title,
+#howto .faq__title {
+  font-family: "freightbigcmp-pro";
+  font-size: 96px;
+  text-align: center;
+  margin-bottom: 160px;
+}
+
+#physical .faq__question,
+#electronic .faq__question,
+#howto .faq__question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid #000000;
+  padding: 34px 150px;
+  cursor: pointer;
+}
+
+#physical .faq__question:last-of-type,
+#electronic .faq__question:last-of-type,
+#howto .faq__question:last-of-type {
+  border-bottom: 1px solid #000000;
+}
+
+#physical .faq__paragraph,
+#electronic .faq__paragraph,
+#howto .faq__paragraph {
+  width: calc(100% - 46px - 35px);
+}
+
+#physical .faq__btn,
+#electronic .faq__btn,
+#howto .faq__btn {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  margin-left: 35px;
+  background-color: #222222;
+}
+
+#physical .faq__btn-line,
+#electronic .faq__btn-line,
+#howto .faq__btn-line {
+  position: absolute;
+  background-color: white;
+  width: 24px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#physical .faq__btn-line.vertical,
+#electronic .faq__btn-line.vertical,
+#howto .faq__btn-line.vertical {
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#physical .faq__btn-line.vertical.open,
+#electronic .faq__btn-line.vertical.open,
+#howto .faq__btn-line.vertical.open {
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+#physical .faq__answer,
+#electronic .faq__answer,
+#howto .faq__answer {
+  padding: 34px 130px 34px 0;
+  width: 100%;
+  display: none;
+}
+
+#physical .faq__answer.visible,
+#electronic .faq__answer.visible,
+#howto .faq__answer.visible {
+  display: block;
+  -webkit-animation: show-section 1s;
+  animation: show-section 1s;
+}
+
+#physical .faq__link,
+#electronic .faq__link,
+#howto .faq__link {
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+  text-decoration: underline;
+}
+
+#physical .footer,
+#electronic .footer,
+#howto .footer {
+  position: relative;
+  padding: 58px 0px 58px 0px;
+  background-color: white;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#physical .footer__title,
+#electronic .footer__title,
+#howto .footer__title {
+  font-family: "freightbigcmp-pro";
+  font-size: 96px;
+  line-height: 96px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 160px;
+  letter-spacing: 0px;
+}
+
+#physical .footer__container,
+#electronic .footer__container,
+#howto .footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+#physical .footer__inner,
+#electronic .footer__inner,
+#howto .footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 350px;
+  height: 240px;
+}
+
+#physical .footer__text1,
+#electronic .footer__text1,
+#howto .footer__text1 {
+  font-family: 'UniversLTPro-65Bold';
+  font-size: 34px;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+#physical .footer__text2,
+#electronic .footer__text2,
+#howto .footer__text2 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+#physical .footer__link,
+#electronic .footer__link,
+#howto .footer__link {
+  display: block;
+  text-align: center;
+  width: 178px;
+  height: 48px;
+  line-height: 47px;
+  background-color: #222222;
+  text-decoration: none;
+  margin: 0 auto;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#physical .footer__link:hover,
+#electronic .footer__link:hover,
+#howto .footer__link:hover {
+  background-color: black;
+}
+
+#physical .footer__link.white,
+#electronic .footer__link.white,
+#howto .footer__link.white {
+  height: 46px;
+  line-height: 46px;
+  background-color: transparent;
+  border: 1px solid #222222;
+  color: black;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#physical .footer__link.white:hover,
+#electronic .footer__link.white:hover,
+#howto .footer__link.white:hover {
+  background-color: black;
+  color: white;
+}
+
+#physical .footer__white-line,
+#electronic .footer__white-line,
+#howto .footer__white-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -104px;
+  height: 104px;
+  background-color: white;
+}
+
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrap-footer {
+  width: 100%;
+  background-color: white;
+}
+
+#physical .points,
+#physical .cards,
+#electronic .points,
+#electronic .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#physical .instructions,
+#electronic .instructions {
+  display: block;
+  width: 100%;
+  max-width: 1300px;
+  box-sizing: border-box;
+}
+
+#points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#points~.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#epoints {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#epoints~.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#epoints~.instructions {
+  display: block;
+}
+
+#points~.instructions {
+  display: block;
+}
+
+#points~.scroll-carousel-with-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@-webkit-keyframes show-section {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show-section {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1300px) {
+  .main .header__popup {
+    left: initial;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main .header__motto {
+    left: 80px;
+  }
+  .header__title {
+    font-size: 100px;
+  }
+
+  .header__title--font {
+    font-size: 85px;
+  }
+  .carousel {
+    padding: 60px 80px 60px 80px
+  }
+
+  .main .nav {
+    padding: 0 80px;
+  }
+
+  .main #physical .cards,
+  .main #electronic .cards,
+  .main #howto .cards {
+    padding: 60px 80px 60px 80px;
+  }
+
+  .main #physical .instructions,
+  .main #electronic .instructions,
+  .main #howto .instructions {
+    padding: 58px 80px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main .header__paragraph {
+    font-size: 84px;
+    line-height: 80px;
+  }
+
+  .main .nav {
+    padding: 0 40px;
+  }
+
+  .main #physical .instructions,
+  .main #electronic .instructions,
+  .main #howto .instructions {
+    padding: 58px 40px;
+  }
+
+  .main #physical .instructions__items,
+  .main #electronic .instructions__items,
+  .main #howto .instructions__items {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .main #physical .instructions__title,
+  .main #electronic .instructions__title,
+  .main #howto .instructions__title {
+    font-size: 65px;
+  }
+
+  .main #physical .instructions__inner,
+  .main #electronic .instructions__inner,
+  .main #howto .instructions__inner {
+    font-size: 84px;
+  }
+
+  .main #physical .reminder,
+  .main #electronic .reminder,
+  .main #howto .reminder {
+    font-size: 65px;
+    line-height: 66px;
+  }
+
+  .main #physical .reminder__text.inner,
+  .main #electronic .reminder__text.inner,
+  .main #howto .reminder__text.inner {
+    font-size: 84px;
+  }
+
+  .main #physical .faq__question,
+  .main #electronic .faq__question,
+  .main #howto .faq__question {
+    padding: 34px 70px;
+  }
+
+  .main #physical .faq__title,
+  .main #electronic .faq__title,
+  .main #howto .faq__title {
+    font-size: 84px;
+  }
+
+  .main #physical .points__list,
+  .main #electronic .points__list,
+  .main #howto .points__list {
+    margin-left: 70px;
+  }
+
+  .main #physical .points__link,
+  .main #electronic .points__link,
+  .main #howto .points__link {
+    margin: 70px 0 0 70px;
+  }
+
+  .main #physical .footer__title,
+  .main #electronic .footer__title,
+  .main #howto .footer__title {
+    font-size: 84px;
+    margin-bottom: 160px;
+  }
+
+  .main #physical .scroll-carousel-with-arrows__container,
+  .main #electronic .scroll-carousel-with-arrows__container,
+  .main #howto .scroll-carousel-with-arrows__container {
+    width: 3290px;
+  }
+
+  .main #physical .scroll-carousel-with-arrows__item,
+  .main #electronic .scroll-carousel-with-arrows__item,
+  .main #howto .scroll-carousel-with-arrows__item {
+    height: 360px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main .header__motto {
+    left: 40px;
+    top: 50%;
+  }
+  .carousel {
+    padding: 60px 0 60px 0;
+  }
+  .carousel__title {
+    padding: 0 40px
+  }
+ 
+
+  .main #physical .cards,
+  .main #electronic .cards,
+  .main #howto .cards {
+    padding: 60px 40px 60px 40px;
+  }
+
+  .main #physical .cards__title,
+  .main #electronic .cards__title,
+  .main #howto .cards__title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .main #physical .cards__paragraph,
+  .main #electronic .cards__paragraph,
+  .main #howto .cards__paragraph {
+    font-size: 17px;
+    line-height: 26px;
+
+  }
+
+
+  .main #physical .instructions,
+  .main #electronic .instructions,
+  .main #howto .instructions {
+    padding: 58px 40px;
+  }
+
+  .main #physical .instructions__paragraph,
+  .main #electronic .instructions__paragraph,
+  .main #howto .instructions__paragraph {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .main #physical .faq__question,
+  .main #electronic .faq__question,
+  .main #howto .faq__question {
+    padding: 34px 40px;
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .main #physical .faq__answer,
+  .main #electronic .faq__answer,
+  .main #howto .faq__answer {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .main #physical .points__title,
+  .main #electronic .points__title,
+  .main #howto .points__title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .main #physical .points__text,
+  .main #electronic .points__text,
+  .main #howto .points__text {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .main #physical .points__tick,
+  .main #electronic .points__tick,
+  .main #howto .points__tick {
+    width: 25px;
+    height: 25p;
+  }
+
+  .main #physical .points__list,
+  .main #electronic .points__list,
+  .main #howto .points__list {
+    margin-left: 50px;
+  }
+
+  .main #physical .points__link,
+  .main #electronic .points__link,
+  .main #howto .points__link {
+    margin: 60px 0 0 50px;
+  }
+
+  .main #physical .footer__inner,
+  .main #electronic .footer__inner,
+  .main #howto .footer__inner {
+    height: 210px;
+  }
+
+  .main #physical .footer__text1,
+  .main #electronic .footer__text1,
+  .main #howto .footer__text1 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .main #physical .footer__text2,
+  .main #electronic .footer__text2,
+  .main #howto .footer__text2 {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .main #physical .scroll-carousel-with-arrows__container,
+  .main #electronic .scroll-carousel-with-arrows__container,
+  .main #howto .scroll-carousel-with-arrows__container {
+    width: 2540px;
+  }
+
+  .main #physical .scroll-carousel-with-arrows__item,
+  .main #electronic .scroll-carousel-with-arrows__item,
+  .main #howto .scroll-carousel-with-arrows__item {
+    height: 277px;
+  }
+  .main #electronic .cards__paragraph.cards__paragraph--small {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 764px) {
+  #physical .saldo, #electronic .saldo {
+    display: block;
+    padding: 100px 40px;
+    background-color: white;
+
+  }
+  .cards__wrapper {
+    flex-wrap: wrap;
+  }
+  .cards__circle {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 50px
+    
+  }
+  .cards__circle-img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    animation-name: circle;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .cards__circle-discount {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: "freightbigcmp-pro";
+    font-size: 70px;
+    color: #FCF7F2;
+
+  }
+  .header {
+    aspect-ratio: 764/1380;
+  }
+
+  .header__title {
+    max-width: 100px;
+  }
+
+  .header__card {
+    width: 70%;
+    top: 25%
+  }
+  .saldo__title {
+    font-family: "freightbigcmp-pro";
+    text-align: center;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+  }
+  .saldo__link {
+    display: block;
+    margin: 70px auto 0 auto;
+    font-size: 13px;
+    background-color: #222222;
+    height: 48px;
+    width: 196px;
+    line-height: 47px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .saldo__link:hover {
+    background-color: black;
+  }
+  .main .header__motto {
+    left: 40px;
+    top: 70%;
+  }
+
+  .main .header__motto-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main .header__paragraph {
+    margin-bottom: 80px;
+  }
+
+  .main .header__buttons {
+    top: 45%;
+  }
+
+  .main .header__popup {
+    display: none;
+  }
+
+  .main .header__placeholder-img {
+    aspect-ratio: 360/623;
+  }
+
+  .main .header__placeholder-loader {
+    top: 45%;
+  }
+
+  .main .nav {
+    padding: 0;
+  }
+
+  .main .nav__item:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .main #physical .reminder,
+  .main #electronic .reminder,
+  .main #howto .reminder {
+    font-size: 45px;
+    line-height: 46px;
+    padding: 80px 50px;
+  }
+
+  .main #physical .reminder__text.inner,
+  .main #electronic .reminder__text.inner,
+  .main #howto .reminder__text.inner {
+    font-size: 60px;
+  }
+
+  .main #physical .instructions,
+  .main #electronic .instructions,
+  .main #howto .instructions {
+    padding: 58px 40px;
+  }
+
+  .main #physical .instructions__title,
+  .main #electronic .instructions__title,
+  .main #howto .instructions__title {
+    font-size: 45px;
+    line-height: 60px;
+    margin-bottom: 100px;
+  }
+
+  .main #physical .instructions__inner,
+  .main #electronic .instructions__inner,
+  .main #howto .instructions__inner {
+    font-size: 60px;
+  }
+
+  .main #physical .faq,
+  .main #electronic .faq,
+  .main #howto .faq {
+    padding: 73px 15px;
+  }
+
+  .main #physical .faq__title,
+  .main #electronic .faq__title,
+  .main #howto .faq__title {
+    font-size: 60px;
+    margin-bottom: 73px;
+  }
+
+  .main #physical .faq__question,
+  .main #electronic .faq__question,
+  .main #howto .faq__question {
+    padding: 34px 34px;
+  }
+
+  .main #physical .faq__paragraph,
+  .main #electronic .faq__paragraph,
+  .main #howto .faq__paragraph {
+    font-size: 17px;
+  }
+
+  .main #physical .faq__answer,
+  .main #electronic .faq__answer,
+  .main #howto .faq__answer {
+    font-size: 17px;
+  }
+
+  .main #physical .points.padding-smaller,
+  .main #electronic .points.padding-smaller,
+  .main #howto .points.padding-smaller {
+    padding: 180px 29px 50px 29px;
+  }
+
+  .main #physical .footer__title,
+  .main #electronic .footer__title,
+  .main #howto .footer__title {
+    font-size: 60px;
+    margin-bottom: 100px;
+  }
+
+  .main #physical .scroll-carousel-with-arrows,
+  .main #electronic .scroll-carousel-with-arrows,
+  .main #howto .scroll-carousel-with-arrows {
+    padding-bottom: 0px;
+  }
+  .main #electronic .cards__inner {
+    width: 100%;
+  }
+  .main #electronic .cards__inner:last-child {
+    justify-content: center;
+    margin-top: 70px;
+    display: none;
+    
+  }
+  .main #electronic .cards__link {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  #physical .instructions__item {
+    width: 100%;
+  }
+  #physical .instructions__link {
+    width: 100%;
+  }
+  #physical .saldo, #electronic .saldo {
+    padding: 80px 15px
+  }
+  .carousel {
+    padding: 70px 0;
+  }
+
+  .carousel__title {
+    padding: 0 15px;
+    font-size: 50px;
+  }
+  .carousel__title.carousel__title--font {
+    font-size: 40px;
+  }
+  .saldo__title{
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .saldo__link {
+    width: 100%;
+  }
+  .header__link {
+    width: 100%;
+  }
+  .main .header__motto {
+    top: initial;
+    bottom: -60px;
+    left: 15px
+  }
+
+  .header__card {
+    top: 30%
+  }
+
+  .main .header__motto-links {
+    position: absolute;
+    width: 100%;
+    bottom: 0%
+  }
+
+  .main .header__paragraph {
+    font-size: 46px;
+    line-height: 46px;
+  }
+
+  .main .header__title {
+    width: 280px;
+  }
+
+  .main .header__arrow {
+    display: block;
+  }
+
+  .main .nav {
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .nav__list {
+    justify-content: space-between;
+  }
+
+  .main .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+  .main .nav__item {
+    width: calc(650px / 3);
+    height: 100%;
+  }
+
+  .main .nav__bottom-line {
+    bottom: 0;
+  }
+
+
+
+  .main #physical .cards,
+  .main #electronic .cards,
+  .main #howto .cards {
+    padding: 70px 15px 70px 15px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .main #physical .cards__inner,
+  .main #electronic .cards__inner,
+  .main #howto .cards__inner {
+    width: 100%;
+  }
+
+  .main #physical .cards__inner:first-child,
+  .main #electronic .cards__inner:first-child,
+  .main #howto .cards__inner:first-child {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    
+  }
+
+  .main #physical .cards__animation-physical,
+  .main #electronic .cards__animation-physical,
+  .main #howto .cards__animation-physical {
+    width: 100%;
+  }
+
+  .main #physical .cards__motto,
+  .main #electronic .cards__motto,
+  .main #howto .cards__motto {
+    height: auto;
+  }
+
+  .main #physical .cards__title,
+  .main #electronic .cards__title,
+  .main #howto .cards__title {
+    font-size: 22px;
+    width: 100%;
+    max-width: none;
+    text-align: left;
+    line-height: 30px;
+  }
+
+  .main #physical .cards__paragraph,
+  .main #electronic .cards__paragraph,
+  .main #howto .cards__paragraph {
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 27px;
+  }
+
+  .main #physical .cards__link,
+  .main #electronic .cards__link,
+  .main #howto .cards__link {
+    width: 100%;
+  }
+
+  .main #physical .reminder,
+  .main #electronic .reminder,
+  .main #howto .reminder {
+    padding: 60px 15px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .main #physical .reminder__text.inner,
+  .main #electronic .reminder__text.inner,
+  .main #howto .reminder__text.inner {
+    font-size: 50px;
+  }
+
+  .main #physical .instructions,
+  .main #electronic .instructions,
+  .main #howto .instructions {
+    padding: 60px 15px;
+  }
+
+  .main #physical .instructions__title,
+  .main #electronic .instructions__title,
+  .main #howto .instructions__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .main #physical .instructions__inner,
+  .main #electronic .instructions__inner,
+  .main #howto .instructions__inner {
+    font-size: 50px;
+  }
+
+  .main #physical .instructions__paragraph,
+  .main #electronic .instructions__paragraph,
+  .main #howto .instructions__paragraph {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .main #physical .points.moved-padding,
+  .main #electronic .points.moved-padding,
+  .main #howto .points.moved-padding {
+    padding: 276px 0px 60px 0px;
+  }
+
+  .main #physical .points.padding-smaller,
+  .main #electronic .points.padding-smaller,
+  .main #howto .points.padding-smaller {
+    padding: 150px 0px 80px 0px;
+  }
+
+  .main #physical .points,
+  .main #electronic .points,
+  .main #howto .points {
+    padding: 150px 0px 80px 0px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .main #physical .points__inner,
+  .main #electronic .points__inner,
+  .main #howto .points__inner {
+    width: 100%;
+  }
+
+  .main #physical .points__inner:last-child,
+  .main #electronic .points__inner:last-child,
+  .main #howto .points__inner:last-child {
+    padding: 50px 15px 0px 15px;
+  }
+
+  .main #physical .points__list,
+  .main #electronic .points__list,
+  .main #howto .points__list {
+    margin-left: 0px;
+  }
+
+  .main #physical .points__link,
+  .main #electronic .points__link,
+  .main #howto .points__link {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+
+  .main #physical .faq__title,
+  .main #electronic .faq__title,
+  .main #howto .faq__title {
+    font-size: 50px;
+  }
+
+  .main #physical .faq__answer,
+  .main #electronic .faq__answer,
+  .main #howto .faq__answer {
+    padding: 34px 0px 34px 0;
+  }
+
+  .main #physical .footer,
+  .main #electronic .footer,
+  .main #howto .footer {
+    padding: 60px 0px 60px 0px;
+  }
+
+  .main #physical .footer__title,
+  .main #electronic .footer__title,
+  .main #howto .footer__title {
+    font-size: 50px;
+    margin-bottom: 60px;
+  }
+
+  .main #physical .footer__container,
+  .main #electronic .footer__container,
+  .main #howto .footer__container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .main #physical .footer__inner,
+  .main #electronic .footer__inner,
+  .main #howto .footer__inner {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .main #physical .footer__inner:last-child,
+  .main #electronic .footer__inner:last-child,
+  .main #howto .footer__inner:last-child {
+    height: 180px;
+    margin-bottom: 0px;
+  }
+
+  .main #physical .footer__text1,
+  .main #electronic .footer__text1,
+  .main #howto .footer__text1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+
+  .main #physical .footer__text2,
+  .main #electronic .footer__text2,
+  .main #howto .footer__text2 {
+    font-size: 17px;
+  }
+
+  .main #physical .scroll-carousel-with-arrows__container,
+  .main #electronic .scroll-carousel-with-arrows__container,
+  .main #howto .scroll-carousel-with-arrows__container {
+    width: 1540px;
+    padding-left: 15px;
+  }
+
+  .main #physical .scroll-carousel-with-arrows__item,
+  .main #electronic .scroll-carousel-with-arrows__item,
+  .main #howto .scroll-carousel-with-arrows__item {
+    height: 166px;
+  }
+}
+
+.scroll-carousel-with-arrows {
+  display: none;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-ordinal-group: 7;
+  -ms-flex-order: 6;
+  order: 6;
+  padding-bottom: 35px;
+  width: 100%;
+  background-color: #FCF7F2;
+}
+
+.scroll-carousel-with-arrows__wrapper {
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll-carousel-with-arrows__wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-carousel-with-arrows__container {
+  width: 4316px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  scroll-behavior: smooth;
+}
+
+.scroll-carousel-with-arrows__item {
+  width: 873px;
+  height: 582px;
+  padding: 0 0 0 10px;
+  text-align: center;
+}
+
+.scroll-carousel-with-arrows__item.smallerimg {
+  width: 387px;
+  height: 582px;
+}
+
+.scroll-carousel-with-arrows__item:first-child {
+  padding: 0px;
+}
+
+.scroll-carousel-with-arrows__image {
+  width: 100%;
+  display: block;
+  cursor: default;
+}
+
+.scroll-carousel-with-arrows__link {
+  display: inline-block;
+  color: #000000;
+  padding: 10px 40px;
+  font-size: 12px;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-family: "Univers LT W05_55 Roman", sans-serif;
+  text-decoration: none;
+  margin: 30px 0 0;
+  border: 1px solid #000000;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.scroll-carousel-with-arrows__link:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+#physical .scroll-carousel-with-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.arrows {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+
+@media (max-width: 1100px) {
+  .arrows {
+    padding: 0 15px;
+  }
+}
+
+.arrows__arrow {
+  width: 28px;
+  margin: 0 2px 15px 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
